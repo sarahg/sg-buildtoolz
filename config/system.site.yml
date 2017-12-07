@@ -1,7 +1,7 @@
 uuid: 24115b23-6ce1-43da-a6ca-5aeaecb61a45
-name: sg-buildtoolz
+name: Buildtoolz
 mail: sgerman@pantheon.io
-slogan: ''
+slogan: 'Testing out fancy CI stuff with Pantheon ⚡️'
 page:
   403: ''
   404: ''
