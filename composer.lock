@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c9ac0ab7607a0cf77360c9f4ed28360",
+    "content-hash": "a16c5a3765a90df283dd4b32821746c2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2027,6 +2027,52 @@
             "homepage": "https://www.drupal.org/project/simple_block",
             "support": {
                 "source": "http://cgit.drupalcode.org/simple_block"
+            }
+        },
+        {
+            "name": "drupal/site_audit",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/site_audit",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/site_audit-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "67196b644ea2a1528b1f98e36e221b65ba867dc3"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1461470939",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "FluxSauce",
+                    "homepage": "https://www.drupal.org/user/1386596"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/site_audit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/site_audit"
             }
         },
         {
