@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'https://ci-10-sg-buildtoolz.pantheonsite.io/themes/contrib/bootstrap/favicon.ico'
+  url: 'https://dev-sg-buildtoolz.pantheonsite.io/themes/contrib/bootstrap/favicon.ico'
   use_default: true
 cdn_jsdelivr_theme: flatly
 table_responsive: '-1'
@@ -19,3 +19,6 @@ logo:
   path: ''
   url: ''
   use_default: false
+modal_enabled: 0
+popover_enabled: 0
+tooltip_enabled: 0
