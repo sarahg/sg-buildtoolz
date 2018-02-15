@@ -14,8 +14,8 @@ workflows:
         script: private/scripts/deploy_product/composer-install.php
 			- 
 				type: webphp
-         description: Log to New Relic
-         script: private/scripts/new_relic_deploy.php
+        description: Log to New Relic
+        script: private/scripts/new_relic_deploy.php
   sync_code:
     after:
       - type: webphp
