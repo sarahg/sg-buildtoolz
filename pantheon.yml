@@ -4,16 +4,13 @@ php_version: 7.1
 workflows:
   deploy_product:
     after:
-      -
-        type: webphp
+      - type: webphp
         description: 'Run composer prepare-for-pantheon'
         script: private/scripts/deploy_product/prepare-for-pantheon.php
-      -
-        type: webphp
+      - type: webphp
         description: 'Run composer install & drupal-scaffold'
-        script: private/scripts/deploy_product/composer-install.php
-			- 
-				type: webphp
+        script: private/scripts/deploy_product/composer-install.php	
+			- type: webphp
         description: 'Log to New Relic'
         script: private/scripts/new_relic_deploy.php
   sync_code:
