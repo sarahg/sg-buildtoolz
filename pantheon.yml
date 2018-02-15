@@ -14,13 +14,13 @@ workflows:
         script: private/scripts/deploy_product/composer-install.php
 			- 
 				type: webphp
-        description: Log to New Relic
+        description: 'Log to New Relic'
         script: private/scripts/new_relic_deploy.php
   sync_code:
     after:
       - type: webphp
-        description: Push changes back to GitHub if needed
+        description: 'Push changes back to GitHub if needed'
         script: private/scripts/quicksilver/quicksilver-pushback/push-back-to-github.php
 			- type: webphp
-        description: Log to New Relic
+        description: 'Log to New Relic'
         script: private/scripts/new_relic_deploy.php
