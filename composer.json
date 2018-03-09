@@ -9,24 +9,25 @@
       "url": "https://packages.drupal.org/8"
     }
   ],
-    "require": {
+  "require": {
     "composer/installers": "^1.0.20",
     "cweagans/composer-patches": "^1.0",
     "drupal-composer/drupal-scaffold": "^2.0.1",
-    "drupal/bootstrap": "^3.7",
     "drupal/config_direct_save": "^1.0",
     "drupal/config_installer": "^1.0",
     "drupal/console": "^1",
     "drupal/core": "^8",
-    "drupal/redis": "^1.0@RC",
-    "drupal/search_api_pantheon": "~1.0",
     "drupal/simple_block": "^1.0@beta",
-    "drupal/site_audit": "^2.1",
     "drush/drush": "~8",
     "rvtraveller/qs-composer-installer": "^1.1",
-    "webflo/drupal-core-strict": "^8"
+    "webflo/drupal-core-strict": "^8",
+    "drupal/bootstrap": "^3.7",
+    "drupal/redis": "^1.0@RC",
+    "drupal/search_api_pantheon": "~1.0",
+    "drupal/site_audit": "^2.1"
   },
   "require-dev": {
+    "php": ">=7.1.0",
     "mikey179/vfsstream": "^1.2",
     "behat/behat": "3.*",
     "behat/mink": "^1.7",
@@ -107,9 +108,6 @@
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
-    "sort-packages": true,
-    "platform": {
-      "php": "7.0"
-    }
+    "sort-packages": true
   }
 }
