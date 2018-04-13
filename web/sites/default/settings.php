@@ -67,13 +67,22 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
     exit();
   }
   // Drupal 8 Trusted Host Settings
-  if (is_array($settings)) {
-    $settings['trusted_host_patterns'] = array('^'. preg_quote($primary_domain) .'$');
+  if (defined('PANTHEON_ENVIRONMENT')) {
+    if (in_array($_ENV['PANTHEON_ENVIRONMENT'], array('dev', 'test', 'live'))) {
+      $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.getpantheon.io";
+      $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.pantheon.io";
+      $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.pantheonsite.io";
+      $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.panth.io";
+
+      # Replace value with custom domain(s) added in the site Dashboard
+      $settings['trusted_host_patterns'][] = '^.+.buildtoolz.win$';
+      $settings['trusted_host_patterns'][] = '^buildtoolz.win$';
+    }
   }
 }
 
 // Configure Redis
-/*if (defined('PANTHEON_ENVIRONMENT')) {
+if (defined('PANTHEON_ENVIRONMENT')) {
   // Include the Redis services.yml file. Adjust the path if you installed to a contrib or other subdirectory.
   $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
 
@@ -87,11 +96,6 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   $settings['cache']['default'] = 'cache.backend.redis'; // Use Redis as the default cache.
   $settings['cache_prefix']['default'] = 'pantheon-redis';
 
-  // Always set the fast backend for bootstrap, discover and config, otherwise this gets lost when redis is enabled.
-  $settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
-  $settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
-  $settings['cache']['bins']['config']    = 'cache.backend.chainedfast';
-
   // Set Redis to not get the cache_form (no performance difference).
   $settings['cache']['bins']['form']      = 'cache.backend.database';
-}*/
+}
