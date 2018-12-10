@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11fb27531d6598862b4557564bb9e62a",
+    "content-hash": "69fcb633cdf289e319d521dbaaf3acc0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1574,16 +1574,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.5",
+            "version": "8.6.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "900c28f19d4b5643f43c1cf046684046402eaac4"
+                "reference": "1ae53a417211bcc024320cba01b4be7a0c3962ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/900c28f19d4b5643f43c1cf046684046402eaac4",
-                "reference": "900c28f19d4b5643f43c1cf046684046402eaac4",
+                "url": "https://api.github.com/repos/drupal/core/zipball/1ae53a417211bcc024320cba01b4be7a0c3962ba",
+                "reference": "1ae53a417211bcc024320cba01b4be7a0c3962ba",
                 "shasum": ""
             },
             "require": {
@@ -1701,10 +1701,12 @@
                 "drupal/link": "self.version",
                 "drupal/locale": "self.version",
                 "drupal/media": "self.version",
+                "drupal/media_library": "self.version",
                 "drupal/menu_link_content": "self.version",
                 "drupal/menu_ui": "self.version",
                 "drupal/migrate": "self.version",
                 "drupal/migrate_drupal": "self.version",
+                "drupal/migrate_drupal_multilingual": "self.version",
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
                 "drupal/node": "self.version",
@@ -1736,7 +1738,8 @@
                 "drupal/user": "self.version",
                 "drupal/views": "self.version",
                 "drupal/views_ui": "self.version",
-                "drupal/workflows": "self.version"
+                "drupal/workflows": "self.version",
+                "drupal/workspaces": "self.version"
             },
             "require-dev": {
                 "behat/mink": "1.7.x-dev",
@@ -1747,7 +1750,7 @@
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
                 "phpspec/prophecy": "^1.4",
-                "phpunit/phpunit": "^4.8.35 || ^6.1",
+                "phpunit/phpunit": "^4.8.35 || ^6.5",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
                 "symfony/phpunit-bridge": "^3.4.3"
@@ -1805,7 +1808,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-07-04T21:08:11+00:00"
+            "time": "2018-08-03T04:09:25+00:00"
         },
         {
             "name": "drupal/pantheon_advanced_page_cache",
