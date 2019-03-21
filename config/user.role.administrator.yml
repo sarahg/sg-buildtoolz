@@ -13,5 +13,6 @@ permissions:
   - 'access taxonomy overview'
   - 'administer nodes'
   - 'administer taxonomy'
+  - 'access user profiles'
   - 'administer users'
   - 'bypass node access'
