@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e87407f77a414dffd87f8e267fd8a2c",
+    "content-hash": "80469f51e057506b93544318c0dc34f0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1887,6 +1887,61 @@
             "homepage": "https://www.drupal.org/project/pantheon_advanced_page_cache",
             "support": {
                 "source": "http://cgit.drupalcode.org/pantheon_advanced_page_cache"
+            }
+        },
+        {
+            "name": "drupal/paranoia",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paranoia",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paranoia-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "4beb9c8ad6fdcc4feb0dc78bc8ce0d56560f707e"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1506626344",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "killes@www.drop.org",
+                    "homepage": "https://www.drupal.org/user/227"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                }
+            ],
+            "description": "Protects a site from some insecure configurations.",
+            "homepage": "https://www.drupal.org/project/paranoia",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paranoia"
             }
         },
         {
@@ -4198,7 +4253,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -7132,6 +7187,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
@@ -7568,6 +7624,7 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/pantheon_advanced_page_cache": 10,
+        "drupal/paranoia": 15,
         "drupal/redis": 5,
         "drupal/simple_block": 10
     },
