@@ -7,5 +7,12 @@ _core:
 id: administrator
 label: Administrator
 weight: 2
-is_admin: true
-permissions: {  }
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'access user profiles'
+  - 'administer users'
+  - 'bypass node access'

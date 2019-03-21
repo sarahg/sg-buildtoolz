@@ -26,11 +26,13 @@ module:
   options: 0
   page_cache: 0
   pantheon_advanced_page_cache: 0
+  paranoia: 0
   path: 0
   quickedit: 0
   rdf: 0
   redis: 0
   search: 0
+  security_review: 0
   shortcut: 0
   simple_block: 0
   system: 0
