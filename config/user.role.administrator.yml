@@ -8,4 +8,10 @@ id: administrator
 label: Administrator
 weight: 2
 is_admin: true
-permissions: {  }
+permissions:
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'bypass node access'
