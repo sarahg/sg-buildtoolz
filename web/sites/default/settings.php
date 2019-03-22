@@ -43,15 +43,8 @@ $settings['install_profile'] = 'standard';
  * Redirects.
  */
 if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
-  // Redirect to https://$primary_domain in the Live environment
-  if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
-    /** Replace www.example.com with your registered domain name */
-    $primary_domain = 'buildtoolz.win';
-  }
-  else {
-    // Redirect to HTTPS on every Pantheon environment.
-    $primary_domain = $_SERVER['HTTP_HOST'];
-  }
+  // Redirect to HTTPS on every Pantheon environment.
+  $primary_domain = $_SERVER['HTTP_HOST'];
 
   if ($_SERVER['HTTP_HOST'] != $primary_domain
       || !isset($_SERVER['HTTP_X_SSL'])
@@ -73,10 +66,6 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
       $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.pantheon.io";
       $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.pantheonsite.io";
       $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.panth.io";
-
-      # Replace value with custom domain(s) added in the site Dashboard
-      $settings['trusted_host_patterns'][] = '^.+.buildtoolz.win$';
-      $settings['trusted_host_patterns'][] = '^buildtoolz.win$';
     }
   }
 }
