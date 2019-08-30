@@ -121,6 +121,9 @@
     "patches": {
       "drupal/security_review": {
         "Update drush commands to work for 9.x version of drush": "https://www.drupal.org/files/issues/2019-08-29/2912708-port-drush-11.patch"
+      },
+      "drupal/seckit": {
+        "Implement hook_help() in seckit.module": "https://www.drupal.org/files/issues/2019-08-02/3072176-2.patch"
       }
     }
   },
