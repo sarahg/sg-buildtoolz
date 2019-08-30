@@ -46,7 +46,7 @@
     "symfony/css-selector": "^2.8"
   },
   "conflict": {
-      "drupal/drupal": "*"
+    "drupal/drupal": "*"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
@@ -79,11 +79,21 @@
   },
   "extra": {
     "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "drush/contrib/{$name}": ["type:drupal-drush"]
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/contrib/{$name}": [
+        "type:drupal-drush"
+      ]
     },
     "build-env": {
       "install-cms": [
@@ -107,6 +117,11 @@
         ".htaccess",
         "web.config"
       ]
+    },
+    "patches": {
+      "drupal/security_review": {
+        "Update drush commands to work for 9.x version of drush": "https://www.drupal.org/files/issues/2019-08-29/2912708-port-drush-11.patch"
+      }
     }
   },
   "config": {
