@@ -32,6 +32,7 @@ module:
   rdf: 0
   redis: 0
   search: 0
+  seckit: 0
   security_review: 0
   shortcut: 0
   simple_block: 0
