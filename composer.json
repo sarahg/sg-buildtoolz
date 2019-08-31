@@ -26,7 +26,6 @@
     "drupal/security_review": "1.x-dev",
     "drupal/simple_block": "^1.0@beta",
     "drupal/site_audit": "^2.1",
-    "drush/drush": "~8",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8"
   },
