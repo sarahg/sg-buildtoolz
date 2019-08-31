@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92a1a5d9e153569ac232c2359cd73a52",
+    "content-hash": "19f855a6ae6ad3d8e79adb8bf3868fcb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7303,27 +7303,26 @@
         },
         {
             "name": "drush-ops/behat-drush-endpoint",
-            "version": "0.0.4",
+            "version": "9.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/behat-drush-endpoint.git",
-                "reference": "aba768db7338b2fe1f17693421760baadb37a39e"
+                "reference": "c32bcc22bced413c5be4b401719d60d932240098"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/behat-drush-endpoint/zipball/aba768db7338b2fe1f17693421760baadb37a39e",
-                "reference": "aba768db7338b2fe1f17693421760baadb37a39e",
+                "url": "https://api.github.com/repos/drush-ops/behat-drush-endpoint/zipball/c32bcc22bced413c5be4b401719d60d932240098",
+                "reference": "c32bcc22bced413c5be4b401719d60d932240098",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
-                "drupal/drupal-driver": "*",
+                "drupal/drupal-driver": "^1",
                 "php": ">=5.3.0"
             },
             "type": "drupal-drush",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPLv2"
+                "GPL-2.0-or-later"
             ],
             "description": "Drush commandfile for use with drupal/drupal-driver.",
             "homepage": "https://github.com/drush-ops/behat-drush-endpoint",
@@ -7332,7 +7331,7 @@
                 "Drush",
                 "testing"
             ],
-            "time": "2015-11-11T07:34:40+00:00"
+            "time": "2018-09-20T22:58:29+00:00"
         },
         {
             "name": "fabpot/goutte",
