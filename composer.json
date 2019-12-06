@@ -19,6 +19,7 @@
     "drupal/config_installer": "^1.0",
     "drupal/console": "^1",
     "drupal/core": "^8",
+    "drupal/devel": "^2.1",
     "drupal/pantheon_advanced_page_cache": "^1.0@beta",
     "drupal/paranoia": "^1.0@alpha",
     "drupal/redis": "^1.0@RC",
